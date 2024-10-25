@@ -23,3 +23,16 @@ npm start
 
 > Tampilan Mobile:
 ![imgmo](https://i.ibb.co.com/6P5Xh9S/Screenshot-2024-10-25-23-16-45-621-com-foxdebug-acodefree.jpg)
+
+### Halaman:
+- Halaman Daftar.
+- Halaman Login.
+
+### Alat:
+- **Termux.**
+- Acode.
+- Chrome.
+- ZArchiver.
+
+___OS yang saya gunakan:___
+- Android.
