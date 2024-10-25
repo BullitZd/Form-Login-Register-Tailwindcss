@@ -29,10 +29,10 @@ npm start
 - Halaman Login.
 
 ### Alat:
-- *Termux.*
-- Acode.
-- Chrome.
-- ZArchiver.
+- **Termux.**
+- **Acode.**
+- **Chrome.**
+- **ZArchiver.**
 
 ___OS yang saya gunakan:___
-- Android.
+- **Android.**
