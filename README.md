@@ -29,7 +29,7 @@ npm start
 - Halaman Login.
 
 ### Alat:
-- **Termux.**
+- *Termux.*
 - Acode.
 - Chrome.
 - ZArchiver.
