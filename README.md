@@ -28,6 +28,21 @@ npm start
 - Halaman Daftar.
 - Halaman Login.
 
+___Struktur:___
+- HTML.
+
+___Styling:___
+- CSS.
+- TailwindCss.
+
+___Validasi:___
+- JavaScript.
+- JQuerry.
+
+___Server:___
+- NodeJs.
+- Express.
+
 ### Alat:
 - **Termux.**
 - **Acode.**
