@@ -1,6 +1,6 @@
 # Form-Login-Register-Tailwindcss
 
-Form Login &amp; Register Html Css Tailwindcss Javascript JQuerry NodeJs Express Termux Android
+Form Login dan Register menggunakan Html Css Tailwindcss Javascript JQuerry.
 
 ### Installasi [Termux]:
 - ___Clone repository:___
