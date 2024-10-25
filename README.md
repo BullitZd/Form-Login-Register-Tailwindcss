@@ -53,4 +53,4 @@ ___OS yang saya gunakan:___
 - **Android.**
 
 #### Support:
-[Support Saya](https://sociabuzz.com/bullitzd)
+[Support](https://sociabuzz.com/bullitzd)
