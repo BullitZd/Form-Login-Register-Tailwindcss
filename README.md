@@ -20,5 +20,6 @@ npm start
 ### Screenshoot:
 > Tampilan Dekstop:
 ![imgdeks](https://i.ibb.co.com/r6ZskB1/IMG-20241025-231825.jpg)
+
 > Tampilan Mobile:
 ![imgmo](https://i.ibb.co.com/6P5Xh9S/Screenshot-2024-10-25-23-16-45-621-com-foxdebug-acodefree.jpg)
