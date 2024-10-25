@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* menampilkan/menyembunyikan form login dan register */
+.hidden {
+  display: none;
+}
+
+/* tampl/sembunyikan teks password */
+    .password-container {
+      position: relative;
+    }
+
+    .password-container input {
+      width: 100%;
+      padding-right: 40px; /* Tambahkan ruang untuk ikon mata */
+    }
+
+    .password-toggle {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: white; /* Warna ikon mata */
+    }
+    
+    /* CSS untuk mengubah warna placeholder menjadi merah */
+.text-red::placeholder {
+    color: #ff2b2be5;
+}

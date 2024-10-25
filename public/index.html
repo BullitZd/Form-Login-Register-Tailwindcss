@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#333333">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#333333">
+  <title>Masuk atau Buat Akun Baru</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="icon" href="assets/icons/bullitzd.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Monoton&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="h-screen w-full m-0 flex items-center justify-center text-white" style='font-family: "Rethink Sans", sans-serif;background-color: #c4c4c4;'>
+
+  <div class="container flex h-full lg:h-fit" style="">
+
+    <!-- Container untuk Login dan Daftar -->
+    <div class="form-section flex flex-col lg:flex-row w-full relative" style="background-color: #767676;">
+      <h3 class="text-2xl absolute top-5 left-6 mb-5 leading-relaxed" style="font-family: 'Monoton', sans-serif;font-weight: 400;font-style: normal;">BULLIT</h3>
+      
+      <!-- Login Section -->
+      <div class="hidden login-section flex items-center justify-center p-12 lg:p-20 lg:w-2/5 h-full mb-20" style="">
+        <div class="w-full">
+          <h2 class="text-2xl text-center font-semibold mb-6 mt-20 lg:mt-18" style='font-family: "Berkshire Swash", serif;font-weight: 400;font-style: normal;'>Welcome Back!</h2>
+          <form action="/login" method="POST">
+            <label for="email" class="block mb-1">Name/Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required autocomplete="off" class="inp w-full pt-2 pb-0 pl-2 rounded mb-2 bg-transparent italic text-white outline-0 shadow-md focus:scale-105 transition-transform duration-300" style="border-bottom: 1.5px solid white;">
+
+            <label for="password" class="block mb-1 ">Password:</label>
+            <div class="password-container">
+             <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="off" class="inp w-full pt-2 pb-0 pl-2 rounded mb-2 bg-transparent italic text-white outline-0 shadow-md focus:scale-105 transition-transform duration-300" style="border-bottom: 1.5px solid white;">
+              <span class="material-icons password-toggle" id="togglePassword">visibility</span>
+            </div>
+            <input type="hidden" id="">
+            
+            <div class="mb-7 relative">
+              <a href="#" class="hover:underline text-sm italic right-0 absolute">Forgot Password?</a>
+            </div>
+            
+            <button type="submit" id="btn-login" class="btn w-full p-2 rounded mb-4 bg-gray-800 hover:bg-gray-700 shadow-md hover:scale-105 transition-transform duration-300" style="">Sign In</button>
+            <button type="button" id="continue-fb" class="w-full p-2 rounded flex items-center justify-center mb-4 bg-blue-600 shadow-md hover:scale-105 transition-transform duration-300" style="background-color:;"><img src="assets/icons/fb1.png" alt="" class="mr-2" style="width:25px;">Sign in with Facebook</button>
+            <button type="button" class="w-full p-2 rounded flex items-center justify-center bg-gray-100 text-gray-800 mb-4 shadow-md hover:scale-105 transition-transform duration-300" style="background-color:;"><img src="assets/icons/google.png" alt="" class="mr-2" style="width:25px;">Sign in with Google</button>
+            <!-- <button type="button" id="continue-apple" class="w-full p-2 rounded flex items-center justify-center bg-gray-900" style="background-color:;"><img src="assets/icons/apple.png" alt="" class="mr-2" style="width:25px;">Sign in with Apple</button> -->
+          </form>
+
+          <p class="mt-20 text-center mb-3" >Don't have an account? <a href="#" id="link-reg" class="hover:underline italic ">Sign up</a></p>
+        </div>
+      </div>
+      
+      <!-- register section -->
+      <div class="hidden register-section flex items-center justify-center p-12 lg:p-20 lg:w-2/5 h-full" style="">
+        <div class="w-full">
+          <h2 class="text-2xl text-center font-semibold mb-5 mt-20 lg:mt-20" style='font-family: "Berkshire Swash", serif;font-weight: 400;font-style: normal;'>Sign Up!</h2>
+          <form action="/register" method="POST">
+            <label for="username" class="block mb-1">Name:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your Name" required autocomplete="off" class="inp w-full pt-2 pb-0 pl-2 rounded mb-2 bg-transparent italic text-white outline-0 shadow-md focus:scale-105 transition-transform duration-300" style="border-bottom: 1.5px solid white;">
+            
+            <label for="email" class="block mb-1">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="off" class="inp w-full pt-2 pb-0 pl-2 rounded mb-2 bg-transparent italic text-white outline-0 shadow-md focus:scale-105 transition-transform duration-300" style="border-bottom: 1.5px solid white;">
+
+            <label for="password" class="block mb-1 ">Password:</label>
+            <div class="password-container">
+             <input type="password" id="password1" name="password" placeholder="Enter your password" required autocomplete="off" class="inp w-full pt-2 pb-0 pl-2 rounded mb-2 bg-transparent italic text-white outline-0 shadow-md focus:scale-105 transition-transform duration-300" style="border-bottom: 1.5px solid white;">
+              <span class="material-icons password-toggle " id="togglePassword1">visibility</span>
+            </div>
+            <input type="hidden" id="">
+            
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center text-xs">
+                <input type="checkbox" id="agree" name="agree" class="mr-1 form-checkbox text-blue-500 w-5 h-5 rounded shadow-md focus:scale-110 transition-transform duration-300">
+                <label for="agree" class="">I agree to all Term, Privacy Policy and Fees</label>
+              </div>
+              
+            </div>
+            
+            <!-- <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center text-xs">
+                <input type="checkbox" id="remember-me" name="remember-me" class="mr-1">
+                <label for="remember-me" class="">remember</label>
+              </div>
+              <a href="#" class="hover:underline text-sm italic">Forgot Password?</a>
+            </div> -->
+
+            <button type="submit" id="btn-register" class="btn w-full p-2 rounded mb-4 bg-gray-800 hover:bg-gray-700 shadow-md hover:scale-105 transition-transform duration-300" style="background-color:;">Sign Up</button>
+            <button type="button" id="continue-fb" class="w-full p-2 rounded flex items-center justify-center mb-4 bg-blue-600 shadow-md hover:scale-105 transition-transform duration-300" style="background-color:;"><img src="assets/icons/fb1.png" alt="" class="mr-2" style="width:25px;">Sign in with Facebook</button>
+            <button type="button" id="continue-google" class="w-full p-2 rounded flex items-center justify-center mb-4 bg-gray-100 text-gray-800 shadow-md hover:scale-105 transition-transform duration-300" style="background-color:;"><img src="assets/icons/google.png" alt="" class="mr-2" style="width:25px;">Sign in with Google</button>
+            <!-- <button type="button" id="continue-apple" class="w-full p-2 rounded flex items-center justify-center bg-gray-900" style="background-color:;"><img src="assets/icons/apple.png" alt="" class="mr-2" style="width:25px;">Sign in with Apple</button> -->
+          </form>
+
+          <p class="mt-20 text-center " >Already have an account? <a href="#" id="link-log" class="hover:underline italic">Sign In</a></p>
+        </div>
+      </div>
+      
+      <!-- image section -->
+      <div class="image-section hidden lg:flex lg:w-3/5 bg-gray-100 items-center justify-center relative" style="background-image: url('assets/img/bg3.jpeg');background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="text-center ">
+          <h3 class="text-3xl font-semibold absolute top-0 right-0 m-5 text-white" style=''>W</h3>
+          <p class="text-lg absolute left-0 bottom-0 m-5 text-white leading-relaxed text-left"><span class="text-4xl font-semibold" style="font-family: 'Monoton', sans-serif;font-weight: 400;font-style: normal;">BULLIT</span><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et unde corporis quisquam suscipit assumenda cumque ipsa, tempora nesciunt nostrum amet officiis sint veniam dolorum facere quia, quaerat inventore. Sit, quidem.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
