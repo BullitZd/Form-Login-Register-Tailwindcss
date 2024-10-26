@@ -52,5 +52,5 @@ ___Server:___
 ___OS yang saya gunakan:___
 - **Android.**
 
-#### Support:
+#### Support Me:
 [Support](https://sociabuzz.com/bullitzd)
